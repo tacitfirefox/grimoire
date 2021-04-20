@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="grimoire.Volume">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Volume.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Shape" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="grimoire.SpellWork">
+    <Position X="6.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>SpellWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="grimoire.ChannelSpellWork">
+    <Position X="6.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChannelSpellWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="grimoire.ISpellEffect">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <AssociationLine Name="TargetingVolume" Type="grimoire.ISpellEffectVolume" FixedToPoint="true">
+      <Path>
+        <Point X="10.75" Y="7.25" />
+        <Point X="12.5" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAEAAAAAAAAQAAAAAAAEAAAAAAAgAAKA=</HashCode>
+      <FileName>ISpellEffect.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Aspect" />
+      <Property Name="TargetingVolume" />
+      <Property Name="EffectVolume" />
+      <Property Name="Work" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="grimoire.ISpellAspect">
+    <Position X="6.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAQAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISpellAspect.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DominantAspect" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="grimoire.ISpellEffectVolume">
+    <Position X="12.5" Y="6.75" Width="1.5" />
+    <AssociationLine Name="OuterBoundary" Type="grimoire.Volume" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="6.75" />
+        <Point X="13.25" Y="4.617" />
+        <Point X="10.75" Y="4.617" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISpellEffectVolume.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OuterBoundary" />
+      <Property Name="InnerBoundary" />
+    </ShowAsAssociation>
+  </Interface>
+  <Enum Name="grimoire.Variances" Collapsed="true">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACAAAAAEAAAAIgAAEAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Variances.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="grimoire.Aspects">
+    <Position X="3.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAACAAAAEAAAAAAAAAAAAAAAABAEAAAA=</HashCode>
+      <FileName>Aspects.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="grimoire.Shapes">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAgAAAAAQgAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Shapes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
