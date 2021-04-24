@@ -33,7 +33,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAEAAAAAAAAQAAAAAAAEAAAAAAAgAAKA=</HashCode>
+      <HashCode>AAgAAAAAAAAAAEAAAAAAAAQAAAAAAEEAAAAACAgAAKA=</HashCode>
       <FileName>ISpellEffect.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -78,11 +78,11 @@
       <FileName>Variances.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="grimoire.Aspects">
+  <Enum Name="grimoire.DominantAspects">
     <Position X="3.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgAAAAAAACAAAAEAAAAAAAAAAAAAAAABAEAAAA=</HashCode>
-      <FileName>Aspects.cs</FileName>
+      <FileName>DominantAspects.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="grimoire.Shapes">

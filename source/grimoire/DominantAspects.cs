@@ -1,6 +1,6 @@
 ﻿namespace grimoire
 {
-    public enum Aspects
+    public enum DominantAspects
     {
         /// <summary>
         /// Default or non-value.

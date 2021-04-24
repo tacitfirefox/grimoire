@@ -7,7 +7,7 @@
         /// <summary>
         /// Gets the dominant ethereal aspect of this spell aspect.
         /// </summary>
-        Aspects DominantAspect { get; }
+        DominantAspects DominantAspect { get; }
 
         /// <summary>
         /// Gets the collection of eminent ethereal aspects and their related variances of this spell aspect.
